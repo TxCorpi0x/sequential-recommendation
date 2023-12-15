@@ -1,0 +1,147 @@
+Bibliography.bib 
+
+@inproceedings{10.1145/3383313.3412258,
+  author    = {Wu, Liwei and Li, Shuqing and Hsieh, Cho-Jui and Sharpnack, James},
+  title     = {SSE-PT: Sequential Recommendation Via Personalized Transformer},
+  year      = {2020},
+  isbn      = {9781450375832},
+  publisher = {Association for Computing Machinery},
+  address   = {New York, NY, USA},
+  url       = {https://doi.org/10.1145/3383313.3412258},
+  doi       = {10.1145/3383313.3412258},
+  abstract  = {Temporal information is crucial for recommendation problems because user preferences are naturally dynamic in the real world. Recent advances in deep learning, especially the discovery of various attention mechanisms and newer architectures in addition to widely used RNN and CNN in natural language processing, have allowed for better use of the temporal ordering of items that each user has engaged with. In particular, the SASRec model, inspired by the popular Transformer model in natural languages processing, has achieved state-of-the-art results. However, SASRec, just like the original Transformer model, is inherently an un-personalized model and does not include personalized user embeddings. To overcome this limitation, we propose a Personalized Transformer (SSE-PT) model, outperforming SASRec by almost 5\% in terms of NDCG@10 on 5 real-world datasets. Furthermore, after examining some random users’ engagement history, we find our model not only more interpretable but also able to focus on recent engagement patterns for each user. Moreover, our SSE-PT model with a slight modification, which we call SSE-PT++, can handle extremely long sequences and outperform SASRec in ranking results with comparable training speed, striking a balance between performance and speed requirements. Our novel application of the Stochastic Shared Embeddings (SSE) regularization is essential to the success of personalization. Code and data are open-sourced at https://github.com/wuliwei9278/SSE-PT.},
+  booktitle = {Proceedings of the 14th ACM Conference on Recommender Systems},
+  pages     = {328–337},
+  numpages  = {10},
+  keywords  = {temporal collaborative ranking, sequential recommendation, neural networks, recommender system, personalized transformer, stochastic shared embeddings},
+  location  = {Virtual Event, Brazil},
+  series    = {RecSys '20}
+}
+
+@article{PENG2023111040,
+  title    = {Attention-guided graph convolutional network for multi-behavior recommendation},
+  journal  = {Knowledge-Based Systems},
+  volume   = {280},
+  pages    = {111040},
+  year     = {2023},
+  issn     = {0950-7051},
+  doi      = {https://doi.org/10.1016/j.knosys.2023.111040},
+  url      = {https://www.sciencedirect.com/science/article/pii/S0950705123007906},
+  author   = {Xingchen Peng and Jing Sun and Mingshi Yan and Fuming Sun and Fasheng Wang},
+  keywords = {Recommendation system, Graph convolutional network, Attention mechanism, Multi-behavior},
+  abstract = {Multi-behavior recommendation system aims to improve recommendation performance by using the interaction data of users′ multiple behaviors. Although some methods have explored the dependencies between different behaviors, there are also existing challenges: (1) user–item interactions have complex dependencies; (2) the dependencies between multiple behaviors vary due to users′ personalized preferences. To address these challenges, we propose a new model MB-AGCN (Attention-Guided Graph Convolutional Network for Multi-Behavior Recommendation), which considers personalized interaction patterns and cross-typed behavioral interdependencies. In the MB-AGCN framework, we take the different effects of multi-behavior information on predicting user preferences into account. We first model the user multi-behavior relationships with the attention mechanism to capture the personalized multi-behavior characteristics. Then, we explore the knowledge learned from the multi-behavior relationship modeling to generate a weight matrix that guides the graph neural network to learn the complex dependencies in different types of user–item interactions and capture the relationships between different types of behaviors. A comprehensive evaluation on three real-world datasets shows that MB-AGCN consistently outperforms state-of-the-art methods. Our codes will be available at https://github.com/3endurance/MB-AGCN.}
+}
+
+@misc{tenorio2021robust,
+  title         = {A Robust Alternative for Graph Convolutional Neural Networks via Graph Neighborhood Filters},
+  author        = {Victor M. Tenorio and Samuel Rey and Fernando Gama and Santiago Segarra and Antonio G. Marques},
+  year          = {2021},
+  eprint        = {2110.00844},
+  archiveprefix = {arXiv},
+  primaryclass  = {eess.SP}
+}
+
+@inproceedings{10.1145/3404835.3462968,
+  author    = {Chang, Jianxin and Gao, Chen and Zheng, Yu and Hui, Yiqun and Niu, Yanan and Song, Yang and Jin, Depeng and Li, Yong},
+  title     = {Sequential Recommendation with Graph Neural Networks},
+  year      = {2021},
+  isbn      = {9781450380379},
+  publisher = {Association for Computing Machinery},
+  address   = {New York, NY, USA},
+  url       = {https://doi.org/10.1145/3404835.3462968},
+  doi       = {10.1145/3404835.3462968},
+  abstract  = {Sequential recommendation aims to leverage users' historical behaviors to predict their next interaction. Existing works have not yet addressed two main challenges in sequential recommendation. First, user behaviors in their rich historical sequences are often implicit and noisy preference signals, they cannot sufficiently reflect users' actual preferences. In addition, users' dynamic preferences often change rapidly over time, and hence it is difficult to capture user patterns in their historical sequences. In this work, we propose a graph neural network model called SURGE (short forSeqUential Recommendation with Graph neural nEtworks) to address these two issues. Specifically, SURGE integrates different types of preferences in long-term user behaviors into clusters in the graph by re-constructing loose item sequences into tight item-item interest graphs based on metric learning. This helps explicitly distinguish users' core interests, by forming dense clusters in the interest graph. Then, we perform cluster-aware and query-aware graph convolutional propagation and graph pooling on the constructed graph. It dynamically fuses and extracts users' current activated core interests from noisy user behavior sequences. We conduct extensive experiments on both public and proprietary industrial datasets. Experimental results demonstrate significant performance gains of our proposed method compared to state-of-the-art methods. Further studies on sequence length confirm that our method can model long behavioral sequences effectively and efficiently.},
+  booktitle = {Proceedings of the 44th International ACM SIGIR Conference on Research and Development in Information Retrieval},
+  pages     = {378–387},
+  numpages  = {10},
+  keywords  = {sequential recommendation, dynamic user preferences, graph neural networks},
+  location  = {<conf-loc>, <city>Virtual Event</city>, <country>Canada</country>, </conf-loc>},
+  series    = {SIGIR '21}
+}
+
+@article{SRMNPP,
+  author = {Chen, Xin and Reibman, Alex and Arora, Sanjay},
+  year   = {2022},
+  month  = {07},
+  pages  = {},
+  title  = {Sequential Recommendation Model for Next Purchase Prediction},
+  doi    = {10.48550/arXiv.2207.06225}
+}
+
+@inproceedings{Wang_2019,
+  series     = {IJCAI-2019},
+  title      = {Sequential Recommender Systems: Challenges, Progress and Prospects},
+  url        = {http://dx.doi.org/10.24963/ijcai.2019/883},
+  doi        = {10.24963/ijcai.2019/883},
+  booktitle  = {Proceedings of the Twenty-Eighth International Joint Conference on Artificial Intelligence},
+  publisher  = {International Joint Conferences on Artificial Intelligence Organization},
+  author     = {Wang, Shoujin and Hu, Liang and Wang, Yan and Cao, Longbing and Sheng, Quan Z. and Orgun, Mehmet},
+  year       = {2019},
+  month      = aug,
+  collection = {IJCAI-2019}
+}
+
+@article{9207880,
+  author  = {Yang, Yeongwook and Jang, Hong-Jun and Kim, Byoungwook},
+  journal = {IEEE Access},
+  title   = {A Hybrid Recommender System for Sequential Recommendation: Combining Similarity Models With Markov Chains},
+  year    = {2020},
+  volume  = {8},
+  number  = {},
+  pages   = {190136-190146},
+  doi     = {10.1109/ACCESS.2020.3027380}
+}
+
+@article{LI2024122260,
+  title    = {T3SRS: Tensor Train Transformer for compressing sequential recommender systems},
+  journal  = {Expert Systems with Applications},
+  volume   = {238},
+  pages    = {122260},
+  year     = {2024},
+  issn     = {0957-4174},
+  doi      = {https://doi.org/10.1016/j.eswa.2023.122260},
+  url      = {https://www.sciencedirect.com/science/article/pii/S0957417423027628},
+  author   = {Hao Li and Jianli Zhao and Huan Huo and Sheng Fang and Jianjian Chen and Lutong Yao and Yiran Hua},
+  keywords = {Sequential recommender systems, Model compression, Transformer, Tensor train network},
+  abstract = {In recent years, attention mechanisms have gained popularity in sequential recommender systems (SRSs) due to obtaining dynamic user preferences efficiently. However, over-parameterization of these models often increases the risk of overfitting. To address this challenge, we propose a Transformer model based on tensor train networks. Initially, we propose a tensor train layer (TTL) to accommodate the original weight matrix, thus reducing the space complexity of the mapping layer. Based on the TTL, we reconfigure the multi-head attention module and the position-wise feed-forward network. Finally, a tensor train layer replaces the output layer to complete the overall compression. According to the experimental results, the proposed model compresses SRSs parameters effectively, achieving compression rates of 76.2%−85.0%, while maintaining or enhancing sequence recommendation performance. To our knowledge, the Tensor Train Transformer is the first model compression approach for Transformer-based SRSs, and the model is broadly applicable.}
+}
+
+@article{9963919,
+  author  = {Kiselev, Dmitrii and Makarov, Ilya},
+  journal = {IEEE Access},
+  title   = {Exploration in Sequential Recommender Systems via Graph Representations},
+  year    = {2022},
+  volume  = {10},
+  number  = {},
+  pages   = {123614-123621},
+  doi     = {10.1109/ACCESS.2022.3224816}
+}
+
+@article{9123874,
+  author  = {Yakhchi, Shahpar and Beheshti, Amin and Ghafari, Seyed-Mohssen and Orgun, Mehmet A. and Liu, Guanfeng},
+  journal = {IEEE Access},
+  title   = {Towards a Deep Attention-Based Sequential Recommender System},
+  year    = {2020},
+  volume  = {8},
+  number  = {},
+  pages   = {178073-178084},
+  doi     = {10.1109/ACCESS.2020.3004656}
+}
+
+
+
+
+Those fields that are not to be changed can be left out.
+@ieeetranbstctl{IEEEexample:BSTcontrol,
+  ctluse_article_number    = {yes},
+  ctluse_paper             = {yes},
+  ctluse_forced_etal       = {no},
+  ctlmax_names_forced_etal = {10},
+  ctlnames_show_etal       = {1},
+  ctluse_alt_spacing       = {yes},
+  ctlalt_stretch_factor    = {4},
+  ctldash_repeated_names   = {yes},
+  ctlname_format_string    = {{f.~}{vv~}{ll}{, jj}},
+  ctlname_latex_cmd        = {},
+  ctlname_url_prefix       = {[Online]. Available:}
+}
