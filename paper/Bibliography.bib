@@ -128,7 +128,19 @@ Bibliography.bib
   doi     = {10.1109/ACCESS.2020.3004656}
 }
 
-
+@article{FENG2022113,
+  title    = {Graph neural networks with global noise filtering for session-based recommendation},
+  journal  = {Neurocomputing},
+  volume   = {472},
+  pages    = {113-123},
+  year     = {2022},
+  issn     = {0925-2312},
+  doi      = {https://doi.org/10.1016/j.neucom.2021.11.068},
+  url      = {https://www.sciencedirect.com/science/article/pii/S0925231221017458},
+  author   = {Lixia Feng and Yongqi Cai and Erling Wei and Jianwu Li},
+  keywords = {Recommendation system, Session-based recommendation, Graph neural network, Noise filter},
+  abstract = {Session-based recommendation leverages anonymous sessions to predict which item a user is most likely to click on next. While previous approaches capture items-transition patterns within current session and neighbor sessions, they do not accurately filter out noise within session or widen the range of feasible data in a more reasonable way. In a current session, the user may accidentally click on an unrelated item, resulting in the fact that, the users’ primary intents from neighbor sessions, may mismatch the current session. Thereby, we propose a new framework, dubbed Graph Neural Networks with Global Noise Filtering for Session-based Recommendation (GNN-GNF), aiming to filter noisy data and exploit items-transition patterns in a more comprehensive and reasonable manner. In simple terms, GNN-GNF contains two parts: data preprocessing and model learning. In data preprocesing, an item-level filter module is used to obtain the main intent of user and a session-level filter module is designed to filter the sessions unrelated to the target session intent by means of edge matching. In model learning, we consider both local-level interest obtained by an aggregation of the items representing the main intent of user within a session, and global-level interest deduced from a global graph. We take two kinds of neighbor aggregations, summation and interactive aggregation, respectively, to iteratively derive the representation of the central node in the global graph. Finally, GNN-GNF concatenates the local and global preference to characterize the current session, towards better recommendation prediction. Experiments on two datasets demonstrate that GNN-GNF can achieve competitive results. The source code is available at: https://github.com/Fenglixia/GNF.}
+}
 
 
 Those fields that are not to be changed can be left out.

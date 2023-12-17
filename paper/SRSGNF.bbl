@@ -22,6 +22,19 @@
 \BIBdecl
 \renewcommand{\BIBentryALTinterwordstretchfactor}{4}
 
+\bibitem{tenorio2021robust}
+V.~M. Tenorio, S.~Rey, F.~Gama, S.~Segarra, and A.~G. Marques, ``A robust
+  alternative for graph convolutional neural networks via graph neighborhood
+  filters,'' 2021.
+
+\bibitem{FENG2022113}
+\BIBentryALTinterwordspacing
+L.~Feng, Y.~Cai, E.~Wei, and J.~Li, ``Graph neural networks with global noise
+  filtering for session-based recommendation,'' \emph{Neurocomputing}, vol.
+  472, pp. 113--123, 2022. [Online]. Available:
+  \url{https://www.sciencedirect.com/science/article/pii/S0925231221017458}
+\BIBentrySTDinterwordspacing
+
 \bibitem{10.1145/3383313.3412258}
 \BIBentryALTinterwordspacing
 L.~Wu, S.~Li, C.-J. Hsieh, and J.~Sharpnack, ``Sse-pt: Sequential
@@ -90,10 +103,5 @@ H.~Li, J.~Zhao, H.~Huo, S.~Fang, J.~Chen, L.~Yao, and Y.~Hua, ``T3srs: Tensor
   Available:
   \url{https://www.sciencedirect.com/science/article/pii/S0957417423027628}
 \BIBentrySTDinterwordspacing
-
-\bibitem{tenorio2021robust}
-V.~M. Tenorio, S.~Rey, F.~Gama, S.~Segarra, and A.~G. Marques, ``A robust
-  alternative for graph convolutional neural networks via graph neighborhood
-  filters,'' 2021.
 
 \end{thebibliography}

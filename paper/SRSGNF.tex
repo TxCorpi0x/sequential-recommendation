@@ -361,7 +361,7 @@
 % not capitalized unless they are the first or last word of the title.
 % Linebreaks \\ can be used within to get better formatting as desired.
 % Do not put math or special symbols in the title.
-\title{Sequential Recommender Systems Deep Graph Evaluation}
+\title{Sequential Recommender Systems Deep Graph Evaluation and Denoising}
 %
 %
 % author names and IEEE memberships
@@ -402,8 +402,8 @@
 
 
 % The paper headers
-\markboth{Sequential Recommender Systems, VOL.~01, NO.~01, DECEMBER~2023}%
-{Shell \MakeLowercase{\textit{et al.}}: Sequential Recommender Systems Deep Graph Evaluation}
+\markboth{Sequential Recommender Systems Deep Graph Evaluation and Denoising, VOL.~01, NO.~01, DECEMBER~2023}%
+{Shell \MakeLowercase{\textit{et al.}}: Sequential Recommender Systems Deep Graph Evaluation and Denoising}
 % The only time the second header will appear is for the odd numbered pages
 % after the title page when using the twoside option.
 % 
@@ -490,29 +490,24 @@ over time. Despite their success, many SRSs, particularly those based on Graph C
 (GCNNs), face challenges related to computational efficiency, model complexity, and susceptibility to 
 over-parameterization.
 
-In this context, this paper introduces a novel approach to enhance SRSs by replacing the conventional GCNNs 
-with Graph Neighborhood Filters (GNFs). The motivation for this shift is rooted in the observed challenges 
+In this context, this research plans to build a comparison context for SRSs conventional GCNNs denoising
+with Graph Neighborhood Filters (GNFs). The motivation for this effort is rooted in the observed challenges 
 of traditional GCNNs, such as numerical errors, limitations in practical depth, and sensitivity to graph 
-topology variations. The proposed GNFs, referred to as neighborhood graph filters (NGFs), present a family 
+topology variations \cite{tenorio2021robust}. The proposed GNFs, referred to as neighborhood graph filters (NGFs), present a family 
 of graph filters that leverage k-hop neighborhood adjacency matrices, providing a more robust and numerically 
 stable foundation for designing deep neighborhood GCNNs.
 
-The primary goal of this paper is to demonstrate the advantages of employing NGFs over classical graph filters 
+The primary goal of this research is to demonstrate the advantages of employing NGFs over classical graph filters 
 in practical applications. To showcase the effectiveness of this approach, the study employs NGFs in the design 
-of deep neighborhood GCNNs and evaluates their performance in graph signal denoising and node classification 
-tasks using both synthetic and real-world datasets.
+of deep neighborhood GCNNs and evaluates their performance in graph signal denoising \cite{tenorio2021robust} \cite{FENG2022113} 
+and node classification tasks using both synthetic and real-world datasets.
 
-The subsequent sections of this paper delve into the challenges faced by existing SRSs, particularly those 
+The subsequent sections of this research delve into the challenges faced by existing SRSs, particularly those 
 utilizing GCNNs, and present a comprehensive exploration of the proposed GNF-based approach. The experimental 
 results, supported by evaluations on various datasets, highlight the superior performance of the new model in 
 terms of robustness, efficiency, and computational scalability. By addressing these key issues in SRSs, the 
-paper contributes to the ongoing evolution of recommendation systems, paving the way for more effective and 
+research contributes to the ongoing evolution of recommendation systems, paving the way for more effective and 
 scalable solutions in the era of dynamic user preferences and evolving content landscapes.
-
-
-
-
-
 
 
 % === II. Literature Review ========================
@@ -566,7 +561,7 @@ sparsity issues and outperforms existing state-of-the-art recommendation systems
 \subsection*{6. Complexities and Challenges}
 
 A systematic review on sequential recommender systems (SRSs) emphasizes the unique characteristics and challenges \cite{Wang_2019} in this research 
-domain. The paper categorizes key challenges, presents recent developments, and outlines important research directions in the 
+domain. The research categorizes key challenges, presents recent developments, and outlines important research directions in the 
 evolving field of SRSs.
 
 \subsection*{7. Attention Mechanisms and Over-Parameterization}
@@ -615,19 +610,19 @@ compression techniques for these architectures \cite{LI2024122260}.
 \section{Contribution of Study}
 
 In response to the challenges and complexities outlined in the existing literature on sequential recommender systems (SRSs), 
-particularly those employing Graph Convolutional Neural Networks (GCNNs), this study aims to make a significant contribution by 
-proposing the integration of Graph Neighborhood Filters (GNFs) \cite{tenorio2021robust} to improve the overall efficacy of SRSs. The key contribution of 
-this research lies in addressing the limitations associated with traditional graph filters and leveraging GNFs to enhance various 
-aspects of sequential recommendations.
+particularly those employing Graph Convolutional Neural Networks (GCNNs), this study aims to make a contribution by 
+evaluating and tuning the denoising of Graph Neighborhood Filters (GNFs) \cite{tenorio2021robust} \cite{FENG2022113} to evaluate or 
+improve the overall efficacy of SRSs. The key contribution of this research lies in addressing the limitations associated with traditional 
+graph filters and leveraging GNFs or alternative approach to enhance various aspects of sequential recommendations.
 
 While GCNNs have proven effective in capturing graph-structured data, their generalization capabilities may be hindered by 
 over-parameterization. Graph Neighborhood Filters are anticipated to contribute to improved generalization by providing a more 
 parsimonious representation of graph relationships. This, in turn, enhances the model's adaptability to diverse datasets and 
 recommendation scenarios.
 
-The study plans to conduct a comprehensive evaluation of the proposed Graph Neighborhood Filters by benchmarking them against 
-state-of-the-art methods on various real-world datasets. This thorough assessment aims to demonstrate the superiority of the 
-proposed approach in terms of recommendation accuracy, scalability, and computational efficiency.
+The study plans to conduct a comprehensive evaluation and improve denoising performance of the proposed Graph Neighborhood 
+Filters by benchmarking them against state-of-the-art methods on various real-world datasets. This thorough assessment aims 
+to demonstrate the superiority of the proposed approach in terms of recommendation accuracy, scalability, and computational efficiency.
 
 
 
@@ -639,29 +634,29 @@ proposed approach in terms of recommendation accuracy, scalability, and computat
 \subsection*{1. Data Collection}
 
 \begin{itemize}
-  \item \textbf{Datasets}: Select diverse real-world datasets representing different recommendation scenarios (e.g., temporal recommendations, multi-behavior scenarios).
+  \item \textbf{Datasets}: Select diverse real-world datasets representing denoising performance of the GNFs.
   \item \textbf{Data Preprocessing}: Clean and preprocess datasets, handling missing values, encoding categorical features, and ensuring a standardized format.
 \end{itemize}
 
 \subsection*{2. Graph Construction}
 
 \begin{itemize}
-  \item \textbf{User-Item Interaction Graph}: Build a graph representation of user-item interactions, considering temporal dynamics and multi-behavior dependencies.
+  \item \textbf{User-Item Interaction Graph}: Build a graph representation of user-item interactions, considering temporal dynamics and denosing dependencies.
   \item \textbf{Graph Neighborhood Extraction}: Define k-hop neighborhood adjacency matrices to capture local graph structures.
 \end{itemize}
 
 \subsection*{3. Graph Neighborhood Filters Integration}
 
 \begin{itemize}
-  \item \textbf{Design Graph Neighborhood Filters (GNFs)}: Develop GNFs to replace traditional graph filters, ensuring adaptability to different graph structures.
-  \item \textbf{Tensor Train Compression}: Optionally, explore tensor train compression techniques to further enhance efficiency and scalability.
+  \item \textbf{Graph Neighborhood Filters (GNFs) Tuning}: Modify GNFs denosing mechanism and Hyper-Parameter manipulation.
+  \item \textbf{Denosing Performance}: Optionally, explore graph noise filtering techniques to further enhance efficiency and scalability.
 \end{itemize}
 
 \subsection*{4. Model Architecture}
 
 \begin{itemize}
   \item \textbf{Sequential Recommender System (SRS)}: Establish a baseline SRS model using traditional Graph Convolutional Neural Networks (GCNNs).
-  \item \textbf{Graph Neighborhood Filters Integration}: Integrate the designed GNFs into the SRS architecture, replacing traditional graph filters.
+  \item \textbf{Graph Neighborhood Filters Integration}: Integrate the designed GNFs into the SRS architecture, replacing traditional graph filters with improved denoising capabilities.
 \end{itemize}
 
 \subsection*{5. Model Training}
@@ -675,12 +670,12 @@ proposed approach in terms of recommendation accuracy, scalability, and computat
 
 \begin{itemize}
   \item \textbf{Performance Metrics}: Employ standard evaluation metrics for recommender systems, including precision, recall, F1 score, and ranking metrics like NDCG@k.
-  \item \textbf{Comparison}: Benchmark the performance of the enhanced SRS with GNFs against traditional GCNN-based SRS and other state-of-the-art methods.
+  \item \textbf{Comparison}: Benchmark the performance of the enhanced SRS with GNFs against current implementation of GFNs \cite{tenorio2021robust}.
 \end{itemize}
 
 \subsection*{7. Experimental Setup}
 
-\textbf{Baseline Comparison}: Include a comparison with traditional GCNN-based SRS to highlight the impact of GNFs.
+\textbf{Baseline Comparison}: Include a comparison with traditional GCNN-based SRS to highlight the impact of GNFs and denoising mechanisms.
 
 \subsection*{8. Open-Source Implementation}
 
